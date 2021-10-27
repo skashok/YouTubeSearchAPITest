@@ -22,6 +22,10 @@ To run in Android:
 Choose the Target: TheHandyTube.Android 
 - Either simulator or Device 
 
+Youtube API key:
+=
+Change or configure your API Key here in YouTubeSearchServie.cs line 15 - API_KEY 
+
 Search Feature: 
 =
 Type any search word in the search bar, to search LIVE videos in youtube
