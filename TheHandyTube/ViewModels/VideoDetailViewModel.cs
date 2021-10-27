@@ -1,14 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Net;
-using System.Net.Http;
-using System.Web;
-using MediaManager.Forms;
-using Newtonsoft.Json.Linq;
-using TheHandyTube.Models;
-using Xamarin.CommunityToolkit.UI.Views;
+using MediaManager;
 using Xamarin.Forms;
-using YoutubeExplode;
 
 namespace TheHandyTube.ViewModels
 {
@@ -43,7 +36,12 @@ namespace TheHandyTube.ViewModels
         {
             try
             {
-                this.VideoURL = "https://www.youtube.com/embed/" + videoID;
+                VideoURL = "https://www.youtube.com/embed/" + videoID;
+
+                //CrossMediaManager.Current.Play(VideoURL);
+                //CrossMediaManager.Current.AutoPlay = true;
+                //CrossMediaManager.Current.MediaPlayer.ShowPlaybackControls = true;
+
             }
             catch (Exception)
             {

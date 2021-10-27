@@ -24,5 +24,15 @@
     <None Remove="Plugin.MediaManager.Forms" />
     <None Remove="Octane.Xam.VideoPlayer" />
     <None Remove="Plugin.MediaManager" />
+    <None Remove="System.Drawing.Common" />
+    <None Remove="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Drawing.Common">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.iOS.framework\Versions\15.0.0.6\lib\mono\Xamarin.iOS\Facades\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Android">
+      <HintPath>..\..\..\..\..\Library\Frameworks\Xamarin.Android.framework\Versions\11.3.0.4\lib\xamarin.android\xbuild-frameworks\MonoAndroid\v11.0\Mono.Android.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

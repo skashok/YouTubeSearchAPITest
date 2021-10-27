@@ -4,13 +4,25 @@
              x:Class="TheHandyTube.Views.VideoDetailPage"
              xmlns:xct="clr-namespace:Xamarin.CommunityToolkit.UI.Views;assembly=Xamarin.CommunityToolkit"
              xmlns:local="clr-namespace:TheHandyTube.ViewModels"
-             Title="Video Player">
+             xmlns:forms1="clr-namespace:MediaManager.Forms;assembly=MediaManager.Forms"  
+             Title="Video Player">  
 
-    <xct:MediaElement x:DataType="local:VideoDetailViewModel" x:Name="mediaSource"
-             AutoPlay="True" ShowsPlaybackControls="True" 
-             VerticalOptions="FillAndExpand"
-             Source="http://vjs.zencdn.net/v/oceans.mp4" />
+          <StackLayout>  
+            <!--<xct:MediaElement x:DataType="local:VideoDetailViewModel" x:Name="mediaSource"
+                     AutoPlay="True" ShowsPlaybackControls="True" HeightRequest="100" WidthRequest="100"
+                     VerticalOptions="FillAndExpand"
+                     Source="{Binding VideoURL}"/>-->
 
-             <!--Source="{Binding VideoURL}"-->
+            <WebView x:Name="VideoWebView"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="FillAndExpand"
+                     x:DataType="local:VideoDetailViewModel"
+                     Source="{Binding VideoURL}"
+                     WidthRequest="400"
+                     HeightRequest="400"
+                     IsVisible="true"
+                     />
+             <!--<forms1:VideoView HeightRequest="100" WidthRequest="100"  />-->  
 
+        </StackLayout>
 </ContentPage>

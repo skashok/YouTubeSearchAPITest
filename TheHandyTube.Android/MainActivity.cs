@@ -5,6 +5,7 @@ using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 using Octane.Xamarin.Forms.VideoPlayer.Android;
+using MediaManager.Forms.Platforms.Android;
 
 namespace TheHandyTube.Droid
 {
@@ -14,6 +15,10 @@ namespace TheHandyTube.Droid
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
+            VideoViewRenderer videoViewRenderer = new VideoViewRenderer(this);
+            //Nuget Packages oncreate mathod
+
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);

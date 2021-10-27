@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
-using Octane.Xamarin.Forms.VideoPlayer.iOS;
+using MediaManager.Forms.Platforms.iOS;
 using UIKit;
 
 namespace TheHandyTube.iOS
@@ -27,7 +27,8 @@ namespace TheHandyTube.iOS
 
             LoadApplication(new App());
 
-            FormsVideoPlayer.Init();
+            VideoViewRenderer videoViewRenderer = new VideoViewRenderer();
+            // nuget packages oncreate mathod
 
             return base.FinishedLaunching(app, options);
         }
