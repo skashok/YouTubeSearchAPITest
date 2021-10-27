@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+    <PackageReference Include="YoutubeExplode" Version="6.0.5" />
+    <PackageReference Include="Plugin.MediaManager.Forms" Version="1.0.9" />
+    <PackageReference Include="Octane.Xam.VideoPlayer" Version="3.1.0" />
+    <PackageReference Include="Plugin.MediaManager" Version="1.0.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Plugin.Youtube" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="MvvmLightLibs" />
+    <None Remove="Xamarin.CommunityToolkit" />
+    <None Remove="YoutubeExplode" />
+    <None Remove="Plugin.MediaManager.Forms" />
+    <None Remove="Octane.Xam.VideoPlayer" />
+    <None Remove="Plugin.MediaManager" />
+  </ItemGroup>
+</Project>
